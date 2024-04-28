@@ -19,3 +19,8 @@
 ::-webkit-scrollbar{
     display: none;
 }
+@media (max-width: 768px) {
+    .pc_image{
+        display: none;
+    }
+}

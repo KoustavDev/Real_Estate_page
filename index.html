@@ -11,7 +11,28 @@
 
 <body>
   <!-- Nav bar start -->
-  <nav class="bg-[#2B2B2B] text-white h-10 px-5 flex justify-between items-center">
+  <!-- pc version -->
+
+  <nav class="bg-[#2B2B2B] fixed top-0 left-0 right-0">
+    <div class="px-5 max-w-[1200px] mx-auto  text-white hidden h-10 items-center justify-between md:flex">
+      <div class="text-[20px] font-bold">Logo</div>
+      <ul class="flex justify-between gap-20">
+        <li>Home</li>
+        <li>Servies</li>
+        <li>Find a Team</li>
+        <li>
+          News
+        </li>
+        <li>Contact</li>
+      </ul>
+
+    </div>
+    <!--desktop version-->
+  </nav>
+
+  <!-- mobile version -->
+
+  <nav class="bg-[#2B2B2B] text-white h-10 px-5 flex justify-between items-center md:hidden">
     <div class="tetx-[20] font-bold">logo</div>
     <div>
       <img src="/🦆 icon _menu_.png" alt="icon_menu">
@@ -24,29 +45,131 @@
 
     <!-- Hero content start -->
 
-    <section class="black-grad text-white">
-      <div class="flex flex-col pt-20 px-5 gap-2">
-        <h1 class="text-xl font-medium">We Provide <br> Architectural design <br> and Construction</h1>
-        <p class="text-[#C4C4C4] text-base">
-          More than 100 building and housing projects that we have built. <br>
-          The building owner chose us over other contractors in Jakarta, <br>
-          because our work is different.
-        </p>
-        <button class="self-start text-base font-semibold bg-blue-500 py-1.5 px-3 mt-2">Discover more</button>
-      </div>
-      <!-- Hero content end -->
+    <section class="black-grad">
+      <div class=" text-white flex flex-col  md:flex-row md:items-end md:gap-10 max-w-[1200px] mx-auto">
+        <!-- Hero Text Section -->
+        <div class="flex flex-col pt-10 px-5 gap-2 md:pb-20 ">
+          <h1 class="font-medium text-xl md:text-4xl">
+            We Provide <br />
+            Architectural design
+            <br />and Construction
+          </h1>
+          <p class="text-gray-dark max-w-[35rem]">
+            More than 100 building and housing projects that we have built. The
+            building owner chose us over other contractors in Jakarta, because
+            our work is different
+          </p>
+          <button class="self-start blue-grad text-base px-3 py-1.5 mt-2 bg-red-500">
+            Discover More
+          </button>
+          <div class=" md:flex justify-between mt-8 hidden ">
+            <div class="flex flex-col">
+              <h3 class="text-xl font-bold text-white">300+</h3>
+              <p>
+                Happy <br />
+                Client
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <h3 class="text-xl font-bold text-white">900+</h3>
+              <p>
+                Amazing <br />
+                Projects
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <h3 class="text-xl font-bold text-white">20+</h3>
+              <p>
+                Awards
+                <br />
+                Winnings
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Hero image start -->
-      <div class="flex justify-end -mt-32">
-        <img src="/Hero_building.png" alt="Hero_building">
+        <!-- Hero Image -->
+        <div>
+          <div class="flex justify-end -mt-32 ">
+            <picture>
+              <source media="(min-width: 765px)" srcset="/big_hero_image.png" />
+              <source media="(max-width: 768px)" srcset="/hero_building.png" />
+              <img src="/hero_building.png" alt="Small building" class="md:w-[500px]" />
+            </picture>
+
+          </div>
+          <section class="blue-grad-2 p-5 text-white gap-12 hidden flex-col md:flex">
+            <div class="flex justify-between gap-8">
+              <div class="text-xl font-bold">Logo</div>
+              <div>
+                <div class="flex items-baseline">
+                  <h2 class="text-3xl font-bold text-white">25</h2>
+                  <h2 class="text-lg font-medium ml-1 text-white">Years</h2>
+                </div>
+                <h3 class="-mt-3 text-white">Operated</h3>
+              </div>
+              <p class="text-sm max-w-[400px]">
+                As a trusted general project that has been operating for 25 years, our
+                commitment is always to prioritize our client satisfaction.
+              </p>
+
+            </div>
+
+
+          </section>
+        </div>
       </div>
-      <!-- Hero image end -->
+      </div>
+
+
+      <section class="blue-grad-2 p-5 text-white gap-4 flex flex-col md:hidden">
+        <div class="flex justify-between">
+          <div>
+            <div class="flex items-baseline">
+              <h2 class="text-3xl font-bold">25</h2>
+              <h2 class="text-lg font-medium ml-1">years</h2>
+            </div>
+            <h3 class="text-xl font-semibold -mt-3">Operated</h3>
+          </div>
+          <div class="text-xl font-bold">Logo</div>
+        </div>
+
+        <p class="text-sm">
+          As a trusted general project that has been operating for 25 years, our
+          commitment is always to prioritize our client satisfaction.
+        </p>
+
+        <div class="flex justify-between">
+          <div>
+            <h3 class="text-xl font-bold">300+</h3>
+            <p>
+              Happy <br />
+              Client
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold">900+</h3>
+            <p>
+              Amazing <br />
+              Projects
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold">20+</h3>
+            <p>
+              Awards <br />
+              Winning
+            </p>
+          </div>
+        </div>
+      </section>
     </section>
+
 
     <!-- Hero section end -->
 
     <!-- Section start -->
-    <section class="blue-grad-2 text-white p-5">
+    <section class="blue-grad-2 text-white p-5 md:hidden">
       <div class="flex justify-between">
         <div>
           <div class="flex items-baseline gap-1">
@@ -85,7 +208,8 @@
 
     <!-- Brand section -->
 
-    <section class="h-[100px] flex gap-4 items-center overflow-x-auto overflow-y-hidden p-5">
+    <section
+      class="h-[100px] flex gap-4 items-center overflow-x-auto overflow-y-hidden p-5 md:max-w-[1200px] md:mx-auto md:justify-between md:py-5">
       <div class="h-20 grid place-content-center min-w-[7.5rem] center ">
         <img src="/brand/logo_1.png" alt="">
       </div>
@@ -99,7 +223,7 @@
         <img src="/brand/logo_4.png" alt="">
       </div>
       <div class="h-20  grid place-content-center min-w-[7.5rem] center ">
-        <img src="/brand/logo_5.png" alt="">
+        <img src="/brand/Logo_5.png" alt="">
       </div>
     </section>
 
@@ -107,39 +231,50 @@
 
     <!-- service start -->
 
-    <section class="p-5">
-      <div class="flex flex-col gap-2 text-center">
-        <h2 class="text-xl font-bold text-black">Our Excellent Services</h2>
-        <p class="text-base text-black">Check out our best service you can possibly orders in building your company and
-          don't forget to ask via our email or our customer service if you are interested in using our services</p>
-      </div>
-      <div class="flex gap-4 overflow-x-auto">
-        <div class="flex flex-col gap-2 min-w-[16.25rem]">
-          <div>
-            <img src="/services/services_1.png" alt="" class="shadow-md">
-          </div>
-          <h3 class="text-lg font-semibold">Industrial</h3>
-          <p class="text-base">Industrial development is our main
-            line of business. We do Factory
-            Construction, Warehouse and others</p>
+    <section class="md:bg-[#f8f8f8]">
+      <div class="p-5 md:max-w-[1200px] md:mx-auto md:mt-20">
+        <div class="flex flex-col gap-2 text-center md:flex-row md:justify-between md:items-end">
+          <h2 class="text-xl font-bold text-black md:text-4xl">Our Excellent Services</h2>
+          <h2 class="pc_image text-xl text-center font-bold text-black md:text-4xl md:text-start sm:hidden">Our
+            Excellent <br>Services</h2>
+          <p class="text-base text-black md:max-w-[500px]">
+            Check out our best service you can possibly orders in building your
+            company and don't forget to ask via our email or our customer
+            service if you are interested in using our services
+          </p>
         </div>
-        <div class="flex flex-col gap-2 min-w-[16.25rem]">
-          <div>
-            <img src="/services/services_2.png" alt="" class="shadow-md">
+
+        <div class="flex gap-4 overflow-x-auto md:mt-20">
+          <div class="flex flex-col gap-2 min-w-[16.25rem] md:gap-8">
+            <div>
+              <img src="/services/services_1.png" alt="" class="shadow-md md:w-[370px] md:h-[290px]" />
+            </div>
+            <h3 class="text-lg font-semibold md:text-xl">Industrial</h3>
+            <p class="text-base">
+              Industrial development is our main line of business. We do Factory
+              Construction, Warehouse and others
+            </p>
           </div>
-          <h3 class="text-lg font-semibold">Industrial</h3>
-          <p class="text-base">Industrial development is our main
-            line of business. We do Factory
-            Construction, Warehouse and others</p>
-        </div>
-        <div class="flex flex-col gap-2 min-w-[16.25rem]">
-          <div>
-            <img src="/services/services_3.png" alt="" class="shadow-md">
+          <div class="flex flex-col gap-2 min-w-[16.25rem] md:gap-8">
+            <div>
+              <img src="/services/services_2.png" alt="" class="shadow-md md:w-[370px] md:h-[290px]" />
+            </div>
+            <h3 class="text-lg font-semibold md:text-xl">Industrial</h3>
+            <p class="text-base">
+              Industrial development is our main line of business. We do Factory
+              Construction, Warehouse and others
+            </p>
           </div>
-          <h3 class="text-lg font-semibold">Industrial</h3>
-          <p class="text-base">Industrial development is our main
-            line of business. We do Factory
-            Construction, Warehouse and others</p>
+          <div class="flex flex-col gap-2 min-w-[16.25rem] md:gap-8">
+            <div>
+              <img src="/services/services_3.png" alt="" class="shadow-md md:w-[370px] md:h-[290px]" />
+            </div>
+            <h3 class="text-lg font-semibold md:text-xl">Industrial</h3>
+            <p class="text-base">
+              Industrial development is our main line of business. We do Factory
+              Construction, Warehouse and others
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -147,22 +282,31 @@
     <!-- service end -->
 
     <!--what makesd us start-->
-    <section class="p-5">
+    <section class="p-5 md:max-w-[1200px] md:mx-auto">
       <div class="flex flex-col gap-2">
         <div class="h-1 w-[90px] blue-grad"></div>
-        <h2 class="text-xl font-bold text-black">What Make Us <br>
-          Different?</h2>
-        <p class="text-base text-black">Check out our best service you can possibly orders in building your company and
-          don't forget to ask via our email or our customer service if you are interested in using our services</p>
+        <div class="md:flex md:justify-between md:items-center">
+          <h2 class="text-xl md:text-4xl font-bold text-black">
+            What Make Us <br />
+            Different?
+          </h2>
+          <p class="text-base text-black md:max-w-[560px] md:text-lg">
+            Check out our best service you can possibly orders in building your
+            company and don't forget to ask via our email or our customer
+            service if you are interested in using our services
+          </p>
+        </div>
+
       </div>
 
-      <div class="flex flex-col items-center text-center mt-10 gap-10">
+      <div class="flex flex-col items-center text-center mt-10 gap-10 md:flex-row">
         <div class=" items-center flex flex-col gap-2 min-w-[16.25rem] max-w-[14.625rem]">
           <div class="text-center">
             <img src="/makesus/make_us_1.png" alt="" class="">
           </div>
           <h3 class="text-lg mt-2 font-semibold">Experienced</h3>
-          <p class="text-base text-[#C4C4C4]">Our experience of 25 years of building and making achievements in the
+          <p class="text-base text-[#C4C4C4] md:max-w-[500px] md:text-[18px] leading-8">Our experience of 25 years of
+            building and making achievements in the
             world of development</p>
         </div>
 
@@ -171,7 +315,8 @@
             <img src="/makesus/make_us_2.png" alt="" class="">
           </div>
           <h3 class="text-lg mt-2 font-semibold">competitive price</h3>
-          <p class="text-base text-[#C4C4C4]">The prices we offer you are very competitive without reducing the quality
+          <p class="text-base text-[#C4C4C4] md:max-w-[500px] md:text-[18px] leading-8">The prices we offer you are very
+            competitive without reducing the quality
             of the company's work in the slightest</p>
         </div>
 
@@ -180,7 +325,8 @@
             <img src="/makesus/make_us_3.png" alt="" class="">
           </div>
           <h3 class="text-lg mt-2 font-semibold">On Time</h3>
-          <p class="text-base text-[#C4C4C4]">We prioritize the quality of our work and finish it on time</p>
+          <p class="text-base text-[#C4C4C4] md:max-w-[500px] md:text-[18px] leading-8">We prioritize the quality of our
+            work and finish it on time, Lorem ipsum dolor sit, amet consectetur adipisicing</p>
         </div>
 
         <div class=" items-center flex flex-col gap-2 min-w-[16.25rem] max-w-[14.625rem]">
@@ -188,7 +334,8 @@
             <img src="/makesus/make_us_4.png" alt="" class="">
           </div>
           <h3 class="text-lg mt-2 font-semibold">Best Materials</h3>
-          <p class="text-base text-[#C4C4C4]">The material determines the building itself so we recommend that you use
+          <p class="text-base text-[#C4C4C4] md:max-w-[500px] md:text-[18px] leading-8">The material determines the
+            building itself so we recommend that you use
             the best & quality materials in its class.</p>
         </div>
       </div>
@@ -196,9 +343,11 @@
     <!--what makesd us end-->
 
     <!--our teams start-->
-    <section class="p-5">
-      <div class="bg-team-bg-image h-[340px] bg-no-repeat bg-cover flex justify-center items-end mb-40">
-        <div class="black-grad h-[250px] w-[250px] text-white relative top-24 flex flex-col gap-2 p-5 items-center">
+    <section class="p-5 md:max-w-[1200px] md:mx-auto md:flex md:flex-row">
+      <div
+        class="bg-team-bg-image h-[340px] bg-no-repeat bg-cover flex justify-center items-end mb-40 md:flex-1 md:mr-40 md:flex-col md:h-[500px] ">
+        <div
+          class="black-grad h-[250px] w-[250px] text-white relative top-24 flex flex-col gap-2 p-5 items-center md:top-0 md:-right-24">
           <div>
             <img src="/teams/team_avatar.png" alt="">
           </div>
@@ -208,16 +357,20 @@
             worked on project up to 100+</p>
         </div>
       </div>
-      <div class="flex flex-col">
-        <h2 class="text-xl font-bold text-black">Meet and talk with <br>
-          our best architecture</h2>
-        <p class="text-base text-[#C4C4C4] mt-2">
-          All our teams are professional and competent in their fields and will help you realize your dream building
-          with the excellent result.
+
+      <div class="flex flex-col gap-2 md:flex-1 md:mt-[117px]">
+        <h2 class="text-xl font-bold text-black">
+          Meet and talk with<br />
+          our best architecture
+        </h2>
+        <p class="text-base text-black">
+          All our teams are professional and competent in their fields and
+          will help you realize your dream building with the excellent result.
         </p>
-        <div class="flex justify-between mt-4">
-          <button class="bg-[#0A72AD] text-white px-3 py-1 font-semibold">see all team</button>
-          <button class="flex items-center gap-2 font-semibold">How it works <img src="/teams/right_arrow.png"
+
+        <div class="flex justify-between mt-2 md:justify-normal gap-7">
+          <button class="bg-[#0A72AD] text-white p-1 md:py-5 md:px-10">see all team</button>
+          <button class="font-bold flex items-center gap-2 ">How it works <img src="/teams/right_arrow.png"
               alt=""></button>
         </div>
       </div>
@@ -225,22 +378,26 @@
     <!--our teams end-->
 
     <!-- story section start -->
-    <section class="p-5">
-      <div class="w-full">
-        <img src="/story/story_1.png" alt="story_1" class="w-full">
+    <section class="p-5 md:max-w-[1200px] md:mx-auto md:flex md:flex-row-reverse md:flex-1">
+      <div>
+        <img src="/story/story_1.png" alt="story_1"
+          class="shadow-md w-full md:max-w-[570px] md:h-[470px] md:border-8 md:border-white md:flex-1">
       </div>
-      <div class="mt-4">
-        <h2 class="text-xl font-bold text-black">
-          Our Story <br>
+      <div class="flex flex-col gap-4 flex-1 md:gap-8">
+        <h3 class="text-lg font-semibold md:text-4xl md:font-bold">
+          Our Story<br />
           Who we are
-        </h2>
-        <p class="text-base text-[#C4C4C4] my-4">
-          Established in 1992, PT. Wahana Cipta operates as a General Contracting company with a footprint that we have
-          planted throughout Indonesia. Initially, we focused on construction in the field of residential housing
-          development in Jakarta.
-          As the company grows, now we are present as a reliable...
+        </h3>
+        <p class="text-base text-gray-500 md:max-w-[500px] md:text-[18px] leading-8">
+          Established in 1992, PT. Wahana Cipta operates as a General
+          Contracting company with a footprint that we have planted throughout
+          Indonesia. Initially, we focused on construction in the field of
+          residential housing development in Jakarta. As the company grows,
+          now we are present as a reliable...
         </p>
-        <button class="bg-[#0A72AD] text-white px-3 py-1 font-semibold">See More</button>
+        <button class="bg-[#0A72AD] self-start text-white p-1 md:py-5 md:px-10 font-semibold">
+          see more
+        </button>
       </div>
     </section>
 
@@ -248,14 +405,14 @@
 
     <!-- News & Update section start -->
 
-    <section class="p-5">
+    <section class="p-5 md:max-w-[1200px] md:mx-auto">
       <div>
-        <h2 class="text-xl font-bold text-black">News & Update</h2>
+        <h2 class="text-xl font-bold text-black md:text-[44px]">News & Update</h2>
       </div>
-      <div class="slider flex gap-5 overflow-x-scroll">
-        <div class="card mt-8 flex flex-col gap-1 min-w-64">
+      <div class="slider flex gap-5 overflow-x-scroll md:gap-12">
+        <div class="card mt-8 flex flex-col gap-1 min-w-64 md:w-[370px]">
           <div>
-            <img src="/news/update.png" alt="News & Update">
+            <img src="/news/update.png" alt="News & Update" class="md:w-[370px]">
           </div>
           <div class="heading flex gap-4">
             <div>
@@ -266,15 +423,15 @@
               Elements of Content in <br> Epoxy Paint
             </div>
           </div>
-          <div class="mt-2 text-base text-[#C4C4C4]">
+          <div class="mt-2 text-base text-[#C4C4C4] md:text-[18px] leading-8">
             Epoxy paint and epoxy floor
             contractor. Have you heard the two terms? And what does that have to do with the construction of existing
             buildings? Epoxy itself is included in the type of resin... <span class="text-[#0A72AD]">Read more</span>
           </div>
         </div>
-        <div class="card mt-8 flex flex-col gap-1 min-w-64">
+        <div class="card mt-8 flex flex-col gap-1 min-w-64 md:w-[370px]">
           <div>
-            <img src="/news/update.png" alt="News & Update">
+            <img src="/news/update.png" alt="News & Update" class="md:w-[370px]">
           </div>
           <div class="heading flex gap-4">
             <div>
@@ -285,15 +442,15 @@
               Elements of Content in <br> Epoxy Paint
             </div>
           </div>
-          <div class="mt-2 text-base text-[#C4C4C4]">
+          <div class="mt-2 text-base text-[#C4C4C4] md:text-[18px] leading-8">
             Epoxy paint and epoxy floor
             contractor. Have you heard the two terms? And what does that have to do with the construction of existing
             buildings? Epoxy itself is included in the type of resin... <span class="text-[#0A72AD]">Read more</span>
           </div>
         </div>
-        <div class="card mt-8 flex flex-col gap-1 min-w-64">
+        <div class="card mt-8 flex flex-col gap-1 min-w-64 md:w-[370px]">
           <div>
-            <img src="/news/update.png" alt="News & Update">
+            <img src="/news/update.png" alt="News & Update" class="md:w-[370px]">
           </div>
           <div class="heading flex gap-4">
             <div>
@@ -304,7 +461,7 @@
               Elements of Content in <br> Epoxy Paint
             </div>
           </div>
-          <div class="mt-2 text-base text-[#C4C4C4]">
+          <div class="mt-2 text-base text-[#C4C4C4] md:text-[18px] leading-8">
             Epoxy paint and epoxy floor
             contractor. Have you heard the two terms? And what does that have to do with the construction of existing
             buildings? Epoxy itself is included in the type of resin... <span class="text-[#0A72AD]">Read more</span>
@@ -318,15 +475,19 @@
 
     <!-- project section start -->
 
-    <section class="p-5 flex flex-col  gap-8">
-      <h2 class="text-[#242527] text-xl font-bold">Our collection <br>
-        best project </h2>
-      <div class="grid grid-cols-2 gap-5 max-w-[20rem]">
+    <section class="p-5 flex flex-col  gap-8 md:max-w-[1200px] md:mx-auto">
+      <h2 class="text-[#242527] text-xl font-bold md:text-4xl">Our collection <br> best project </h2>
+      <div class="grid grid-cols-2 gap-5 max-w-[20rem] md:hidden">
         <img src="/project/project1.png" alt="">
         <img src="/project/project2.png" alt="">
         <img src="/project/project3.png" alt="">
         <img src="/project/project4.png" alt="">
       </div>
+      <div class="pc_image grid grid-cols-4 gap-5">
+        <img src="/project_pc/bigProject1.png" alt="">
+        <img src="/project_pc/bigProject2.png" alt="">
+        <img src="/project_pc/bigProject3.png" alt="">
+        <img src="/project_pc/bigProject4.png" alt="">
     </section>
 
     <!-- project section end -->
@@ -334,18 +495,18 @@
     <!-- Footer start -->
 
     <footer class="black-grad">
-      <div class="p-5 flex flex-col text-white gap-10 md:flex-row md:gap-36 md:py-20 ">
+      <div class="p-5 flex flex-col text-white gap-10 md:flex-row md:gap-36 md:py-20 md:max-w-[1200px] md:mx-auto">
         <div>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 md:gap-12">
             <h2 class="text-xl font-bold">LOGO</h2>
             <p class="text-md font-semibold">is a general contractor company based in Jakarta. More than 25 years of
               experience in building and carving out Indonesia's development.</p>
           </div>
           <div class="flex gap-2 mt-8">
-            <img src="public/logo/twitter.svg" alt="">
-            <img src="public/logo/insta.svg" alt="">
-            <img src="public/logo/google.svg" alt="">
-            <img src="public/logo/linkedin.svg" alt="">
+            <img src="/logo/twitter.svg" alt="">
+            <img src="/logo/insta.svg" alt="">
+            <img src="/logo/google.svg" alt="">
+            <img src="/logo/linkedin.svg" alt="">
           </div>
         </div>
         <div class="flex gap-8">
@@ -363,7 +524,8 @@
             <div class="flex flex-col">
               <h4 class="text-xl font-bold mb-8">More</h4>
               <p class="text-md mt-4 cursor-pointer hover:border-white border-b-2 border-transparent">Documentation</p>
-              <p class="text-md mt-4 hover:border-b-2 cursor-pointer hover:border-white border-b-2 border-transparent">License</p>
+              <p class="text-md mt-4 hover:border-b-2 cursor-pointer hover:border-white border-b-2 border-transparent">
+                License</p>
             </div>
           </div>
         </div>
